@@ -54,6 +54,11 @@ ksu@KSU-Ubuntu-1604-32:~$ LD_PRELOAD=./hook.so ./main
 5
 2.000000
 ```
+---------
+### Kali 實作
+![image](https://user-images.githubusercontent.com/22366572/134814769-e5c9ec17-f33a-4c8b-9d24-9b97f5b0b392.png)
+
+
 
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)CTF:pass
 
