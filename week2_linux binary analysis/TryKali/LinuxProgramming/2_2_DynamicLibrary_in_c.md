@@ -143,4 +143,6 @@ $ objdump -p libmylib.so | grep SONAME
 -----
 ### Kali 實作
 按照步驟可以得到結果
+![image](https://user-images.githubusercontent.com/22366572/134811178-caf934da-0a76-4108-9292-239c494d1bc5.png)
+
 -----
