@@ -86,6 +86,14 @@ gcc helloCTFer.c -o hello -save-temps --verbose
 "--verbose" ==> 查看GCC 編譯的詳細工作流程，
 ```
 
+### Kali 實作
+
+- (法1) 用 gcc –E helloCTFer.c –o helloCTFer.i / gcc –S helloCTFer.i  -o helloCTFer.s / gcc -c helloCTFer.s -o helloCTFer.o / gcc  helloCTFer.o -o helloCTFer 分別建立file
+- (法2) 用 gcc helloCTFer.c -o hello -save-temps --verbose 一次建立好所有檔案
+
+![image](https://user-images.githubusercontent.com/22366572/134799105-d0737a60-fbb5-4ee4-8621-6c1b62088195.png)
+
+
 
 ## 3_組語程式格式:[AT&T Syntax]  VS  [Intel Syntax]
 ```
