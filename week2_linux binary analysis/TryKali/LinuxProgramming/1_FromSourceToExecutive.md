@@ -43,6 +43,112 @@ https://man.linuxde.net/hexdump
 https://www.itread01.com/article/1513751613.html
 https://www.itread01.com/p/1385440.html
 ```
+### Kali 實作
+
+- strings ./helloCTFer
+```strings test.exe           
+/lib64/ld-linux-x86-64.so.2
+puts
+__cxa_finalize
+__libc_start_main
+libc.so.6
+GLIBC_2.2.5
+_ITM_deregisterTMCloneTable
+__gmon_start__
+_ITM_registerTMCloneTable
+u/UH
+[]A\A]A^A_
+Hello CTF
+;*3$"
+GCC: (Debian 10.2.1-6) 10.2.1 20210110
+crtstuff.c
+deregister_tm_clones
+__do_global_dtors_aux
+completed.0
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+test.c
+__FRAME_END__
+__init_array_end
+_DYNAMIC
+__init_array_start
+__GNU_EH_FRAME_HDR
+_GLOBAL_OFFSET_TABLE_
+__libc_csu_fini
+_ITM_deregisterTMCloneTable
+puts@GLIBC_2.2.5
+_edata
+__libc_start_main@GLIBC_2.2.5
+__data_start
+__gmon_start__
+__dso_handle
+_IO_stdin_used
+__libc_csu_init
+__bss_start
+main
+__TMC_END__
+_ITM_registerTMCloneTable
+__cxa_finalize@GLIBC_2.2.5
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.gnu.build-id
+.note.ABI-tag
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.plt.got
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.dynamic
+.got.plt
+.data
+.bss
+.comment
+```
+- hexdump test.exe (產生16位元訊息)
+![image](https://user-images.githubusercontent.com/22366572/134799588-7d07a932-2987-4ebd-81d3-8e10c68e0768.png)
+
+- hexdump -C test.exe
+![image](https://user-images.githubusercontent.com/22366572/134799630-34d419b1-fb5c-4b1a-a4e1-5a588936852a.png)
+
+- ELF File magic
+```
+readelf -h /bin/ls
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Entry point address:               0x6160
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          145256 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         11
+  Size of section headers:           64 (bytes)
+  Number of section headers:         30
+  Section header string table index: 29
+```
+
 # 2_Linux C 程式的編譯與運行:
 
 ### 編譯的各階段
