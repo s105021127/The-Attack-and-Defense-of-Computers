@@ -13,7 +13,7 @@ int main()
 }
 ```
 ### Kali 實作
-- 用leafpad寫c 
+- 用leafpad寫c code
 ![image](https://user-images.githubusercontent.com/22366572/134798466-e78bc372-c6b2-46df-889f-8aabd7d37257.png)
 
 ## Unumtu 18.04 LTS/Kali Linux
