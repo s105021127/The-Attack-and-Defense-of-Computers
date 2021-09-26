@@ -12,6 +12,10 @@ int main()
    return 0;
 }
 ```
+### Kali 實作
+- 用leafpad寫c 
+![image](https://user-images.githubusercontent.com/22366572/134798466-e78bc372-c6b2-46df-889f-8aabd7d37257.png)
+
 ## Unumtu 18.04 LTS/Kali Linux
 
 | (1) 編譯 | (2)執行 |(3)檢查執行檔檔案格式|
