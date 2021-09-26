@@ -140,4 +140,7 @@ soname，並載入他。否則是載入soname指定的library檔案。
 可以利用objdump 來看library 的soname。
 $ objdump -p libmylib.so | grep SONAME
 ```
-
+-----
+### Kali 實作
+按照步驟可以得到結果
+-----
