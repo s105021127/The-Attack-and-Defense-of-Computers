@@ -13,7 +13,7 @@ chmod +x adder
 ## 逆向分析
 用 radare2 做 static analysis
 ```
-r2 pass
+r2 adder
 aa
 afl
 s.main
@@ -40,7 +40,6 @@ VV
 ## 撰寫exploit code
 ```
 from pwn import *
-
 r = process('./adder')
 
 r.sendline('1337 0 0')
