@@ -36,3 +36,16 @@ VV
 可以發現就會輸出成功訊息"easyctf"
 
 所以只要將3個數字和設為0x539(1337)，就可以達成目標!
+
+## 撰寫exploit code
+```
+from pwn import *
+
+r = process('./adder')
+
+payload = b'0'*12
+
+r.sendline(payload + p64(0x539))
+
+r.interactive()
+```
