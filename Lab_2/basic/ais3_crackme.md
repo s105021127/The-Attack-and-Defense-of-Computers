@@ -33,7 +33,7 @@ VV
 如果 **test eax, eax** 相等，就會跳到右下角組語，會印出"I'm sorry, that's the wrong secret key!"
 <p> 但如果 <b>test eax, eax</b> 不相等，就會跳到右下角組語，會印出"Correct! that is the secret key!"
   
-所以我們的目標是想辦法印出這行字!
+我們的目標是想辦法印出這行字!
 
 ---
 <補充常見的跳躍指令>
