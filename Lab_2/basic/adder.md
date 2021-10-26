@@ -38,14 +38,18 @@ VV
 所以只要將3個數字和設為0x539(1337)，就可以達成目標!
 
 ## 撰寫exploit code
+
 ```
 from pwn import *
-r = process('./adder')
+r = process('./ais3_crackme')
 
-r.sendline('1337 0 0')
+payload = b'A'*6
+
+r.sendline(payload + '2')
 
 r.interactive()
 ```
+
 實作結果:
 
 ![image](https://user-images.githubusercontent.com/22366572/138793480-64502571-708c-4d0f-a952-fd7b7088867f.png)
