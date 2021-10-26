@@ -27,10 +27,11 @@ VV
 ## 撰寫exploit code
 ```
 from pwn import *
-
 r = process('./ais3_crackme')
 
-r.sendline('1337 0 0')
+payload = b'A'*6
+
+r.sendline(payload + '2')
 
 r.interactive()
 ```
