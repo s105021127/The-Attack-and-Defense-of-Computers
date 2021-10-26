@@ -19,3 +19,14 @@ VV
 ```
 實作結果:
 
+Main組語
+![image](https://user-images.githubusercontent.com/22366572/138788140-f977a32c-436a-48dd-aa95-1380b48002fc.png)
+從倒數幾行可以看到 var_ch var_10h var_14h 相加以後會跟"1337"判斷相不相等，從這裡可以知道這三個變數是儲存使用者輸入的3個數字，如果這三個數字相加不等於1337，則會跳到這組組語:
+![image](https://user-images.githubusercontent.com/22366572/138788714-48eaf671-7a03-4be5-a4bd-0c2ed43950ce.png)
+可以發現，如果不相等的話系統會輸出"nope"
+
+如果這三個數字相加等於"1337"，則會跳到這組組語:
+![image](https://user-images.githubusercontent.com/22366572/138788946-08fc0436-2488-420b-a840-44e991758774.png)
+可以發現就會輸出成功訊息"easyctf"
+
+所以只要將3個數字和設為0x539(1337)，就可以達成目標!
