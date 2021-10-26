@@ -23,6 +23,7 @@ VV
 
 ![image](https://user-images.githubusercontent.com/22366572/138836103-e44b91be-c2ae-4c90-bc5e-bd19824fefba.png)
 
+---
 <補充常見的跳躍指令>
 
 <p>指令	功能
@@ -35,6 +36,7 @@ VV
 <p>jmp	無條件跳 goto
 <p>jz	等於零則跳 ==0
 <p>jnz	不等於零則跳 !=0
+---
 
 ## 撰寫exploit code
 ```
