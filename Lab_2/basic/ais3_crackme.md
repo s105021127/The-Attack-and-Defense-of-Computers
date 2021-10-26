@@ -23,6 +23,17 @@ VV
 
 ![image](https://user-images.githubusercontent.com/22366572/138836103-e44b91be-c2ae-4c90-bc5e-bd19824fefba.png)
 
+<補充常見的跳躍指令>
+指令	功能
+je	相等則跳 ==
+jne	不相等則跳 !=
+jg	大於則跳 >
+jge	大於等於則跳 >=
+jl	小於則跳 <
+jle	小於等於則跳 <=
+jmp	無條件跳 goto
+jz	等於零則跳 ==0
+jnz	不等於零則跳 !=0
 
 ## 撰寫exploit code
 ```
