@@ -4,6 +4,7 @@
 chmod +x adder
 ```
 執行後會出現下列結果:
+![image](https://user-images.githubusercontent.com/22366572/138789434-9189c3fd-1629-419a-83f6-508496d86d6d.png)
 
 
 
