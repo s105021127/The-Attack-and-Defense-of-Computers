@@ -17,7 +17,7 @@ chmod +x LuckyGuess
 ## 逆向分析
 用 radare2 做 static analysisw
 ```
-r2 LuckyGuess2
+r2 LuckyGuess
 aa
 afl
 s.main
@@ -25,4 +25,7 @@ VV
 ```
 實作結果:
 
+**<Main 組語>**
+
+![image](https://user-images.githubusercontent.com/22366572/138873761-a4bbaaa4-f8e0-4184-a546-1eae64d5b3d6.png)
 
