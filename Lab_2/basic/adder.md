@@ -43,9 +43,11 @@ from pwn import *
 
 r = process('./adder')
 
-payload = b'0'*12
-
-r.sendline(payload + p64(0x539))
+r.sendline('1337 0 0')
 
 r.interactive()
 ```
+實作結果:
+
+![image](https://user-images.githubusercontent.com/22366572/138793480-64502571-708c-4d0f-a952-fd7b7088867f.png)
+
