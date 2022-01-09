@@ -36,5 +36,11 @@ Connect to Starting Point VPN before starting the machine
 
 ![image](https://user-images.githubusercontent.com/22366572/148697374-179b7595-78f5-402f-af67-38d4604328c4.png)
 
+## Step 2 -- Online
 
+按下 block 裡的按鈕就完成了
+
+![image](https://user-images.githubusercontent.com/22366572/148697497-df0168b2-62ee-43bf-b563-b7c17d8dba2c.png)
+
+## Step 3 -- TASK 1
 
