@@ -13,3 +13,6 @@
 ## Lab Starting Point 步驟:
 1. Download VPN config
 2. sudo apt install openvpn
+3. sudo openvpn ./strating_point_[username].ovpn
+4. Spawn the machine on HTB
+5. 
