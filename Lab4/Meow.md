@@ -81,11 +81,11 @@ export ip=10.129.189.222
 
 ## Step 9 -- TASK 7
 
-
+![image](https://user-images.githubusercontent.com/22366572/148699639-179eb7e8-8b5a-4bf7-ab75-82fb53c82843.png)
 
 ## Step 10 -- TASK 8
 
-
+![image](https://user-images.githubusercontent.com/22366572/148699834-fd2ffed4-b7bf-4271-b75d-247c902ee242.png)
 
 ## Step 11 -- TASK 9
 
