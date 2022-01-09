@@ -47,5 +47,46 @@ Connect to Starting Point VPN before starting the machine
 
 ![image](https://user-images.githubusercontent.com/22366572/148697497-df0168b2-62ee-43bf-b563-b7c17d8dba2c.png)
 
+export ip=10.129.189.222
+
+![image](https://user-images.githubusercontent.com/22366572/148698477-043cf303-708f-452e-8c04-573b5423341e.png)
+
 ## Step 3 -- TASK 1
+
+![image](https://user-images.githubusercontent.com/22366572/148698526-93459e9a-993a-4d21-a1f0-43473ea07adb.png)
+
+## Step 4 -- TASK 2
+
+![image](https://user-images.githubusercontent.com/22366572/148698582-4277edb3-eb1e-4688-bfab-d43aa1949dba.png)
+
+## Step 5 -- TASK 3
+
+![image](https://user-images.githubusercontent.com/22366572/148698760-65bcbf6b-ea9e-487d-b008-f0087b718602.png)
+
+## Step 6 -- TASK 4
+
+![image](https://user-images.githubusercontent.com/22366572/148698868-7a289c43-4ece-45a2-b97e-e900674868b0.png)
+
+## Step 7 -- TASK 5
+
+![image](https://user-images.githubusercontent.com/22366572/148698932-49ab881f-6ae4-4a02-b7b9-dbb33454d0a1.png)
+
+## Step 8 -- TASK 6
+
+![image](https://user-images.githubusercontent.com/22366572/148699005-8de9152a-196a-41c7-a6e4-4cb11b0d8031.png)
+
+指令: nmap -vvvv $ip
+
+![image](https://user-images.githubusercontent.com/22366572/148699175-995b2a8e-9f57-4281-953d-ab0432d38bc7.png)
+
+## Step 9 -- TASK 7
+
+
+
+## Step 10 -- TASK 8
+
+
+
+## Step 11 -- TASK 9
+
 
