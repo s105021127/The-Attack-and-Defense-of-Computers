@@ -21,10 +21,12 @@
 1. 使用 radare2 做逆向工程
 
 指令:
-```r2 ret2shellcode
+```
+r2 ret2shellcode
 aa
 afl
 s main
-VV```
+VV
+```
 
 2. 使用 IDA 做逆向工程
