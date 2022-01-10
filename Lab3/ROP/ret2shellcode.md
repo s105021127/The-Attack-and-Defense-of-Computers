@@ -114,7 +114,9 @@ cyclic_find(b'daab') # find 'daab' location
 ### Step 6 : 撰寫 shellcode，丟進執行程式裡
 
 **Shellcode :**
-檔名: exp-ret2shellcode.py
+
+(檔名: exp-ret2shellcode.py)
+
 ```
 from pwn import *
 sh = process("./ret2shellcode")
