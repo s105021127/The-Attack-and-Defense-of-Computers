@@ -16,4 +16,15 @@
 
 可以看到這個執行檔沒有開啟保護機制
 
-### Step 3 : 開啟 IDA 做逆向工程
+### Step 3 : 做逆向工程
+
+1. 使用 radare2 做逆向工程
+
+指令:
+```r2 ret2shellcode
+aa
+afl
+s main
+VV```
+
+2. 使用 IDA 做逆向工程
