@@ -81,7 +81,7 @@ vmmap
 
 因為從上面用 radare2 或是 IDA 分析可以看到，buf2 的位置在 0804a080，所以從上面那張圖可以知道 buf2 的位置在 /home/woowater/Lab3/PWN20210824/ROP/ret2， **且狀態是可讀可寫的**
 
-<Perm>:
+<Perm> :
   
   ![image](https://user-images.githubusercontent.com/22366572/148756873-dee75647-ace7-4856-84d6-940b6c9a7054.png)
 
