@@ -113,7 +113,7 @@ cyclic_find(b'daab') # find 'daab' location
 
 ### Step 6 : 撰寫 shellcode，丟進執行程式裡
 
-**Shellcode : **
+**Shellcode :**
 ```
 from pwn import *
 sh = process("./ret2shellcode")
