@@ -85,6 +85,13 @@ vmmap
   
   ![image](https://user-images.githubusercontent.com/22366572/148756873-dee75647-ace7-4856-84d6-940b6c9a7054.png)
 
-### Step 5 : 
+### Step 5 : 找到 return address 的位置
+先用 python 產生 120 個隨機的字元 :
+```
+from pwn import *
+cyclic(120)
+```
+![image](https://user-images.githubusercontent.com/22366572/148826938-5eaf0afc-0787-4573-8c21-7dd49db2dab8.png)
+
 
 
