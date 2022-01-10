@@ -8,7 +8,7 @@
 
 ### Step 2 : 看開啟了哪些保護機制
 
-指令: chexksec [執行檔名]
+指令: ```checksec [執行檔名]```
 
 ![image](https://user-images.githubusercontent.com/22366572/148719750-61ca71ad-4ce4-4565-ac46-e310794b4f09.png)
 
