@@ -103,7 +103,7 @@ aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaa
 ![image](https://user-images.githubusercontent.com/22366572/148828010-4283f211-f9a5-42f7-b748-2154eddeee8d.png)
 ![image](https://user-images.githubusercontent.com/22366572/148828102-624465bd-2689-44cc-8b28-fbcc2fb4f5cd.png)
 
-由上圖可看到，當時跑到 return address 的 EIP 會填進 "daab"，對照產生的120字元可以知道，在跑到 return address 之前需要填進 **112個字元**
+由上圖可看到發生了 Segmentation fault，這是因為在EIP指到的地方發生了 Invalid $PC address。當時跑到 return address 的 EIP 會填進 "daab"，我們希望能將 "daab" 那裡填進我們 shellcode 的位置，這樣當 EIP 跑到 return address 時，就會跳到 shellcode 並執行裡面的程式。對照產生的 120 字元可以知道，在跑到 return address 之前需要填進 **112 個字元**
 ```
 # 開啟python找到指定字元的方法
 from pwn import *
