@@ -70,6 +70,16 @@ r                     # 執行
 ![image](https://user-images.githubusercontent.com/22366572/148741213-6a36cef4-3ccf-4132-8934-0d2d05630b25.png)
 ![image](https://user-images.githubusercontent.com/22366572/148741276-eb742942-e9d4-4bb6-bba5-bab5ba444445.png)
 
+**我們要來找 buf2 的位置**
+
+指令:
+```
+vmmap
+```
+因為從上面用 radare2 或是 IDA 分析可以看到，buf2 的位置在
+
+![image](https://user-images.githubusercontent.com/22366572/148741876-414772bb-c0dc-4824-b5de-e6b9479acb01.png)
+
 
 ### Step 5 : 
 
