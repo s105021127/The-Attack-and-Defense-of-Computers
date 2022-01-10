@@ -20,7 +20,7 @@
 
 1. 使用 radare2 做逆向工程
 
-指令:
+main逆向指令:
 ```
 r2 ret2shellcode
 aa
@@ -28,5 +28,13 @@ afl
 s main
 VV
 ```
+![image](https://user-images.githubusercontent.com/22366572/148738318-e9c4df11-94c9-4fab-a1fe-bc1cd3628721.png)
+
+main 組語:
+
+![image](https://user-images.githubusercontent.com/22366572/148738426-65ea99e6-0861-4f5b-902c-2fadfeef4aec.png)
+![image](https://user-images.githubusercontent.com/22366572/148738519-df170b94-4552-46f6-9b29-a91c08774fe8.png)
+
+
 
 2. 使用 IDA 做逆向工程
