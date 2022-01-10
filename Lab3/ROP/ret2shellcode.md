@@ -2,7 +2,7 @@
 ## 分析步驟
 ### Step 1 : 獲得檔案的基本資料
 
-指令: file [執行檔名]
+指令: ```file [執行檔名]```
 
 ![image](https://user-images.githubusercontent.com/22366572/148719601-e694ff03-15c6-41e8-91e0-63f9528e3fc8.png)
 
