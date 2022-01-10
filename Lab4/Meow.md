@@ -90,4 +90,51 @@ export ip=10.129.189.222
 
 ## Step 11 -- TASK 9
 
+### Introduction
 
+當第一次開始對目標進行滲透測試或任何安全評估時，主要步驟被稱為
+Enumeration。此步驟包括記錄目標的當前狀態，以便盡可能多地學習
+可能的。
+
+每個服務器都使用ports向其他客戶端提供數據。Enmeration階段的第一步
+涉及掃描這些開放端口以查看網絡上目標的用途以及在其上運行的服務可能出現的潛在漏洞。為了快速掃描端口，我們可以使用名為 nmap 的工具。
+
+找到目標上的開放端口後，我們可以使用不同的工具手動訪問它們中的每一個，以確定我們是否可以訪問它們的內容。不同的服務將使用不同的工具或腳本來訪問。
+
+### Enumeration
+
+1. 指令: ping {target_IP}
+
+成功建立 VPN 連接後，我們可以 ping 目標的 IP 地址以查看我們的數據包是否到達目的地。 您可以從起點實驗室頁面獲取當前目標的 IP 地址，然後在鍵入 ping 命令後將其粘貼到終端中，如下圖所示。
+
+![image](https://user-images.githubusercontent.com/22366572/148714349-7e28ec38-766f-47f4-ae0c-e1be39da0ed5.png)
+
+實驗結果:
+
+![image](https://user-images.githubusercontent.com/22366572/148708774-42fbfb3b-ab40-43a7-acd4-55cb90758e21.png)
+
+2. 指令: sudo nmap -sV {target_IP}
+
+繼續下一步 - 掃描目標的所有打開端口以確定
+在其上運行的服務。為了開始掃描過程，我們可以使用以下命令和
+nmap 腳本。 nmap 代表 Network Mapper，它會向目標端口發送請求，希望收到回复，從而確定所述端口是否打開。某些服務默認使用某些端口。其他可能是非標準的，這就是為什麼我們將使用服務檢測標誌 -sV 來確定已識別服務的名稱和描述。
+
+![image](https://user-images.githubusercontent.com/22366572/148714406-dd4ab6a6-176e-44d8-8252-6d13db8e3d90.png)
+
+實驗結果:
+
+![image](https://user-images.githubusercontent.com/22366572/148712930-80754a96-dd40-4dd4-8660-0595460347b0.png)
+
+3. 指令: telnet {target_IP}
+
+掃描完成後，我們發現端口 23/tcp 處於打開狀態，正在運行 telnet 服務。 通過對該協議的 Google 快速搜索，我們發現 telnet 是一種用於遠程管理網絡上其他主機的舊服務。 由於目標正在運行該服務，它可以接收來自網絡中其他主機（例如我們自己）的 telnet 連接請求。 通常，通過 telnet 的連接請求配置了用戶名/密碼組合以提高安全性。 我們可以看到我們的目標就是這種情況，因為我們遇到了 Hack The Box 橫幅和來自目標的請求，以在被允許繼續對目標主機進行遠程管理之前對自己進行身份驗證。
+
+![image](https://user-images.githubusercontent.com/22366572/148714454-c6be7c5c-db50-487d-8ffe-eda9c557756f.png)
+
+實驗結果:
+
+![image](https://user-images.githubusercontent.com/22366572/148714583-494d832b-6aaf-490e-a73b-f8e1b9bc516b.png)
+
+我們需要找到一些可以繼續工作的憑據，因為在我們可以探索的目標上沒有其他端口打開。
+
+4. 指令: 
