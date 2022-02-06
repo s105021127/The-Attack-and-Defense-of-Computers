@@ -1,4 +1,6 @@
 # Fawn
+**本練習的⽬的是讓您熟悉⽂件傳輸協議 (FTP)**
+
 ## 測試連結
 From Hackthebox -> Labs -> Starting Point -> Meow
 
