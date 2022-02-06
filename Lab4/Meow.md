@@ -165,3 +165,6 @@ nmap 腳本。 nmap 代表 Network Mapper，它會向目標端口發送請求，
 ![image](https://user-images.githubusercontent.com/22366572/148715135-9619e8cc-5ee1-4b0a-9e0a-6e8efacaab64.png)
 
 
+## 問題
+不知道為甚麼突然沒辦法 ping
+![image](https://user-images.githubusercontent.com/22366572/152700873-a0b54308-b053-4dc4-a05b-c12cd1f8633d.png)
