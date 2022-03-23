@@ -15,7 +15,7 @@ chmod +x LuckyGuess
 
 為了瞭解程式碼，我們使用**radare 2**來做逆向分析
 ## 逆向分析
-用 radare2 做 static analysisw
+用 radare2 做 static analysis
 ```
 r2 LuckyGuess
 aa
